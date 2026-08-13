@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f8fafc;
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #475569;
+    --color-border: #e2e8f0;
+    
+    /* WTG Logo Theme Colors */
+    --color-wtg-navy: #0f172a;
+    --color-wtg-amber: #f59e0b;
+    --color-wtg-amber-hover: #d97706;
+    --color-wtg-amber-light: #fef3c7;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #0f172a;
+  }
+}
+
+/* WTG Custom Helper Classes */
+.bg-wtg-navy {
+  background-color: #0f172a;
+}
+
+.text-wtg-amber {
+  color: #f59e0b;
+}
+
+.bg-wtg-amber {
+  background-color: #f59e0b;
+}
+
+.border-wtg-amber {
+  border-color: #f59e0b;
+}
+
+/* Custom subtle animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Subtle scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
