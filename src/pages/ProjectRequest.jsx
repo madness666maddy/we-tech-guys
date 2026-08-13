@@ -131,7 +131,7 @@ export default function ProjectRequest() {
       `---\nSubmitted via WTG Project Request Portal`
     );
 
-    const mailtoUrl = `mailto:madhan678@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+    const mailtoUrl = `mailto:wtgwebservices@gmail.com?subject=${emailSubject}&body=${emailBody}`;
 
     setTimeout(() => {
       setIsSubmitting(false);
@@ -152,7 +152,7 @@ export default function ProjectRequest() {
             <SectionTitle
               badge="Start a Project"
               title="Submit Your Project Requirements"
-              subtitle="Tell us what you're building. Your specifications will be sent directly to madhan678@gmail.com and our team will get back to you within 24 hours."
+              subtitle="Tell us what you're building. Your specifications will be sent directly to wtgwebservices@gmail.com and our team will get back to you within 24 hours."
               centered={true}
             />
 
@@ -179,7 +179,7 @@ export default function ProjectRequest() {
                       placeholder="e.g. Alex Morgan"
                       value={formData.fullName}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                      className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
                     />
                   </div>
 
@@ -194,7 +194,7 @@ export default function ProjectRequest() {
                       placeholder="alex@company.com"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                      className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
                     />
                   </div>
 
@@ -208,7 +208,7 @@ export default function ProjectRequest() {
                       placeholder="+91 8667587977"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                      className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
                     />
                   </div>
 
@@ -222,7 +222,7 @@ export default function ProjectRequest() {
                       placeholder="Acme Tech Ventures"
                       value={formData.companyName}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                      className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
                     />
                   </div>
                 </div>
@@ -242,7 +242,7 @@ export default function ProjectRequest() {
                     name="projectType"
                     value={formData.projectType}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-amber-500"
                   >
                     <option value="Web Application">Web Application (React / Python)</option>
                     <option value="Website Development">Corporate / Marketing Website</option>
@@ -268,12 +268,12 @@ export default function ProjectRequest() {
                           onClick={() => handleServiceToggle(service)}
                           className={`px-3 py-2 text-xs font-medium rounded-md border text-left flex items-center justify-between transition-colors ${
                             isSelected
-                              ? 'bg-blue-50 text-blue-700 border-blue-300 font-semibold'
+                              ? 'bg-amber-50 text-amber-900 border-amber-300 font-semibold'
                               : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'
                           }`}
                         >
                           <span>{service}</span>
-                          {isSelected && <CheckCircle2 className="w-3.5 h-3.5 text-blue-600 ml-1 shrink-0" />}
+                          {isSelected && <CheckCircle2 className="w-3.5 h-3.5 text-amber-500 ml-1 shrink-0" />}
                         </button>
                       );
                     })}
@@ -298,7 +298,7 @@ export default function ProjectRequest() {
                     placeholder="Describe your project idea, business goals, key problems to solve, and target users..."
                     value={formData.description}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+                    className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-amber-500 transition-colors"
                   ></textarea>
                 </div>
 
@@ -312,7 +312,7 @@ export default function ProjectRequest() {
                     placeholder="List specific features required (e.g., User Login, Payment Gateway, Admin Dashboard, PDF Reports)..."
                     value={formData.expectedFeatures}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+                    className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-amber-500 transition-colors"
                   ></textarea>
                 </div>
               </div>
@@ -332,7 +332,7 @@ export default function ProjectRequest() {
                       name="budgetRange"
                       value={formData.budgetRange}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-amber-500"
                     >
                       <option value="₹10,000 - ₹25,000">₹10,000 - ₹25,000 (Starter)</option>
                       <option value="₹25,000 - ₹50,000">₹25,000 - ₹50,000 (Professional)</option>
@@ -349,7 +349,7 @@ export default function ProjectRequest() {
                       name="expectedDeadline"
                       value={formData.expectedDeadline}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-amber-500"
                     >
                       <option value="Urgent (1-2 Weeks)">Urgent (1-2 Weeks)</option>
                       <option value="Standard (2-4 Weeks)">Standard (2-4 Weeks)</option>
@@ -369,7 +369,7 @@ export default function ProjectRequest() {
                     placeholder="https://example.com"
                     value={formData.referenceUrl}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+                    className="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-amber-500 transition-colors"
                   />
                 </div>
 
@@ -388,7 +388,7 @@ export default function ProjectRequest() {
                       <Upload className="w-5 h-5 text-slate-400" />
                       <span className="text-xs font-semibold text-slate-700">
                         {formData.uploadedFileName ? (
-                          <span className="text-blue-600">Attached: {formData.uploadedFileName}</span>
+                          <span className="text-amber-600 font-bold">Attached: {formData.uploadedFileName}</span>
                         ) : (
                           'Click or drag specification doc / Wireframes (PDF, PNG, DOCX)'
                         )}
@@ -403,19 +403,19 @@ export default function ProjectRequest() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 px-6 text-base font-bold text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-all duration-150 shadow-xs flex items-center justify-center disabled:opacity-50"
+                  className="w-full py-4 px-6 text-base font-extrabold text-slate-950 bg-amber-500 rounded-md hover:bg-amber-600 border border-amber-400 transition-all duration-150 shadow-xs flex items-center justify-center disabled:opacity-50"
                 >
                   {isSubmitting ? (
                     <span>Opening Mail Client...</span>
                   ) : (
                     <>
-                      Submit Project Request to madhan678@gmail.com
-                      <Send className="w-5 h-5 ml-2" />
+                      Submit Project Request to wtgwebservices@gmail.com
+                      <Send className="w-5 h-5 ml-2 text-slate-950" />
                     </>
                   )}
                 </button>
                 <p className="text-center text-xs text-slate-400 mt-3">
-                  Direct dispatch to madhan678@gmail.com • Direct Call / WhatsApp: +91 8667587977
+                  Direct dispatch to wtgwebservices@gmail.com • Direct Call / WhatsApp: +91 8667587977
                 </p>
               </div>
 
@@ -436,7 +436,7 @@ export default function ProjectRequest() {
                 Project Request Dispatched!
               </h2>
               <p className="text-slate-600 text-base max-w-md mx-auto">
-                Your project specification has been formatted and directed to <strong className="text-slate-900">madhan678@gmail.com</strong>.
+                Your project specification has been formatted and directed to <strong className="text-slate-900">wtgwebservices@gmail.com</strong>.
               </p>
             </div>
 
@@ -456,7 +456,7 @@ export default function ProjectRequest() {
               </div>
               <div className="flex justify-between border-b border-slate-200 pb-2">
                 <span className="text-slate-500">Target Email:</span>
-                <span className="font-semibold text-blue-600">madhan678@gmail.com</span>
+                <span className="font-semibold text-amber-600">wtgwebservices@gmail.com</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-slate-500">Direct Phone:</span>
@@ -467,8 +467,8 @@ export default function ProjectRequest() {
             {/* Action buttons */}
             <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href={`mailto:madhan678@gmail.com?subject=Project%20Request%20[${formData.projectType}]%20-${encodeURIComponent(formData.fullName)}&body=${encodeURIComponent(formData.description)}`}
-                className="px-6 py-3 text-sm font-bold text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors inline-flex items-center justify-center"
+                href={`mailto:wtgwebservices@gmail.com?subject=Project%20Request%20[${formData.projectType}]%20-${encodeURIComponent(formData.fullName)}&body=${encodeURIComponent(formData.description)}`}
+                className="px-6 py-3 text-sm font-extrabold text-slate-950 bg-amber-500 rounded-md hover:bg-amber-600 border border-amber-400 transition-colors inline-flex items-center justify-center"
               >
                 <Mail className="w-4 h-4 mr-2" />
                 Re-open Email App
@@ -477,7 +477,7 @@ export default function ProjectRequest() {
                 href="tel:+918667587977"
                 className="px-6 py-3 text-sm font-semibold text-slate-800 bg-slate-100 rounded-md hover:bg-slate-200 transition-colors inline-flex items-center justify-center"
               >
-                <Phone className="w-4 h-4 mr-2 text-blue-600" />
+                <Phone className="w-4 h-4 mr-2 text-amber-600" />
                 Call +91 8667587977
               </a>
             </div>

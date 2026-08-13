@@ -22,7 +22,7 @@ export default function Footer() {
             </p>
             <div className="pt-2 flex items-center space-x-3 text-xs text-slate-400">
               <span className="inline-flex items-center px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>
+                <span className="w-2 h-2 rounded-full bg-emerald-500 mr-2"></span>
                 Available for New Projects
               </span>
             </div>
@@ -86,7 +86,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-slate-400">
               <li className="flex items-start space-x-2.5">
                 <Mail className="w-4 h-4 text-blue-400 mt-0.5 shrink-0" />
-                <a href="mailto:madhan678@gmail.com" className="hover:text-white transition-colors">madhan678@gmail.com</a>
+                <a href="mailto:wtgwebservices@gmail.com" className="hover:text-white transition-colors">wtgwebservices@gmail.com</a>
               </li>
               <li className="flex items-start space-x-2.5">
                 <Phone className="w-4 h-4 text-blue-400 mt-0.5 shrink-0" />
