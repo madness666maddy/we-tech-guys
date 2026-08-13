@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import SEO from '../components/SEO';
 import SectionTitle from '../components/SectionTitle';
 import { 
   CheckCircle2, 
@@ -144,6 +145,12 @@ export default function ProjectRequest() {
 
   return (
     <div className="min-h-screen bg-slate-50/50 py-16">
+      <SEO
+        title="Get Your Website Quote | Start a Project | WTG — We Tech Guys"
+        description="Submit your business website requirements to WTG — We Tech Guys. Get a fast, transparent fixed-price estimate for website development, landing pages, or e-commerce."
+        canonicalPath="/project-request"
+      />
+
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {!submitted ? (

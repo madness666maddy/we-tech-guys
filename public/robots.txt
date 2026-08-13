@@ -1,0 +1,6 @@
+# User-agent rules for WTG — We Tech Guys
+User-agent: *
+Allow: /
+
+# Sitemap Index
+Sitemap: https://we-tech-guys.vercel.app/sitemap.xml

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SEO from '../components/SEO';
 import SectionTitle from '../components/SectionTitle';
 import { 
   Mail, 
@@ -58,6 +59,12 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-slate-50/50 py-16">
+      <SEO
+        title="Contact WTG — We Tech Guys | Website Development Company"
+        description="Contact WTG — We Tech Guys for website development, landing pages, and web applications. Call or WhatsApp +91 8667587977 or email wtgwebservices@gmail.com."
+        canonicalPath="/contact"
+      />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

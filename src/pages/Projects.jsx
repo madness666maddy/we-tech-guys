@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import SEO from '../components/SEO';
 import SectionTitle from '../components/SectionTitle';
 import ProjectCard from '../components/ProjectCard';
 import { projects, projectCategories } from '../data/projects';
@@ -16,13 +17,19 @@ export default function Projects() {
 
   return (
     <div className="min-h-screen bg-slate-50/50 py-16">
+      <SEO
+        title="Website Portfolio & Projects | WTG — We Tech Guys"
+        description="Explore completed website development, e-commerce platforms, AI business assistants, and custom software projects built by WTG — We Tech Guys."
+        canonicalPath="/projects"
+      />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <SectionTitle
           badge="Our Portfolio"
-          title="Engineered Solutions & Client Work"
-          subtitle="Browse completed applications across web engineering, enterprise AI, mobile apps, and business process automation."
+          title="Engineered Website Solutions & Client Work"
+          subtitle="Browse completed applications across business web engineering, enterprise AI, mobile apps, and business process automation."
           centered={true}
         />
 
@@ -62,7 +69,7 @@ export default function Projects() {
             </p>
             <button
               onClick={() => setSelectedCategory('All')}
-              className="mt-4 text-xs font-bold text-blue-600 underline"
+              className="mt-4 text-xs font-bold text-amber-600 underline"
             >
               Reset to All Projects
             </button>

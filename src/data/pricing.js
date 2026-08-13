@@ -1,54 +1,54 @@
 export const pricingPackages = [
   {
+    id: "launch-special",
+    name: "Launch Special Offer",
+    subtitle: "Limited to First 5 Customers — Complete Business Website.",
+    price: "₹2,000 – ₹5,000",
+    popular: true,
+    features: [
+      "Special Launch Offer for First 5 Clients",
+      "Mobile responsive business website",
+      "Up to 3-5 clean page layouts",
+      "Direct WhatsApp & Contact Form integration",
+      "SEO-friendly HTML structure & Metadata",
+      "Fast production deployment",
+      "100% Source code ownership"
+    ],
+    ctaText: "Claim ₹2,000 Offer"
+  },
+  {
     id: "starter",
-    name: "Starter",
+    name: "Starter Business",
     subtitle: "Ideal for small business websites & online portfolios.",
     price: "₹10,000+",
     popular: false,
     features: [
       "Responsive custom design",
-      "Up to 5 page layouts",
+      "Up to 5-8 page layouts",
       "Interactive contact & inquiry form",
-      "Basic SEO metadata configuration",
-      "Production cloud deployment",
+      "Complete Technical & On-Page SEO setup",
+      "Production cloud deployment & SSL",
       "Mobile & tablet optimization",
-      "2 weeks post-launch bug fixes"
+      "2 weeks post-launch support"
     ],
     ctaText: "Choose Starter"
   },
   {
     id: "professional",
-    name: "Professional",
-    subtitle: "Perfect for custom web applications & client portals.",
+    name: "Professional Web App",
+    subtitle: "Perfect for custom web applications, e-commerce & portals.",
     price: "₹25,000+",
-    popular: true,
+    popular: false,
     features: [
-      "Custom tailored UI/UX system",
-      "React.js single-page application",
+      "Custom tailored UI/UX design system",
+      "React.js single-page web application",
       "Backend REST API architecture",
-      "PostgreSQL or MongoDB integration",
+      "PostgreSQL / MongoDB database",
       "User authentication & JWT permissions",
-      "Interactive dashboard components",
+      "Interactive dashboard & payment integration",
       "Production deployment & SSL setup",
       "30 days dedicated support & maintenance"
     ],
     ctaText: "Choose Professional"
-  },
-  {
-    id: "custom",
-    name: "Custom Enterprise",
-    subtitle: "Built for complex applications, AI tools & scale.",
-    price: "Let's Discuss",
-    popular: false,
-    features: [
-      "Full-stack custom software suite",
-      "AI / OpenAI LLM fine-tuning integration",
-      "Custom microservices & API webhooks",
-      "Advanced administrative dashboard",
-      "Multi-tenant database scaling",
-      "CI/CD deployment automation",
-      "Dedicated SLAs & long-term maintenance"
-    ],
-    ctaText: "Contact Us"
   }
 ];

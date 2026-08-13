@@ -1,9 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import SEO from '../components/SEO';
 import SectionTitle from '../components/SectionTitle';
 import ServiceCard from '../components/ServiceCard';
 import { services } from '../data/services';
-import { ArrowRight, CheckCircle2, ShieldCheck, Zap } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function Services() {
   const navigate = useNavigate();
@@ -14,13 +15,19 @@ export default function Services() {
 
   return (
     <div className="min-h-screen bg-slate-50/50 py-16">
+      <SEO
+        title="Website Development Services | WTG — We Tech Guys"
+        description="Explore WTG's website development services: business websites, e-commerce stores, React development, Python backends, FastAPI microservices, and website maintenance."
+        canonicalPath="/services"
+      />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Page Header */}
         <SectionTitle
           badge="Our Services"
-          title="Full-Cycle Software Engineering Solutions"
-          subtitle="Explore our specialized development services engineered to take your product from concept to high-performance launch."
+          title="Website Development & Digital Engineering Services"
+          subtitle="Explore our specialized development services engineered to take your business from concept to a high-performance, search-friendly website."
           centered={true}
         />
 
@@ -38,14 +45,14 @@ export default function Services() {
         {/* Custom Solution Banner */}
         <div className="mt-20 bg-white rounded-xl border border-slate-200 p-8 lg:p-12 shadow-2xs flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="space-y-3 max-w-2xl">
-            <span className="text-xs font-semibold uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-1 rounded border border-blue-200">
+            <span className="text-xs font-bold uppercase tracking-wider text-amber-900 bg-amber-50 px-2.5 py-1 rounded border border-amber-300">
               Need a Custom Combination?
             </span>
-            <h3 className="text-2xl font-bold text-slate-900">
+            <h2 className="text-2xl font-bold text-slate-900">
               Don't See Your Exact Technical Requirement?
-            </h3>
+            </h2>
             <p className="text-sm text-slate-600 leading-relaxed">
-              We frequently architect bespoke multi-service applications combining AI, specialized backend Python APIs, complex database indexing, and custom React user interfaces.
+              We architect custom multi-service business applications combining AI, backend Python APIs, database engineering, and modern React user interfaces.
             </p>
           </div>
 

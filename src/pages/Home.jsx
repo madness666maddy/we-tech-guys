@@ -14,6 +14,7 @@ import {
   ArrowUpRight 
 } from 'lucide-react';
 
+import SEO from '../components/SEO';
 import HeroDashboard from '../components/HeroDashboard';
 import SectionTitle from '../components/SectionTitle';
 import ServiceCard from '../components/ServiceCard';
@@ -39,22 +40,22 @@ export default function Home() {
     {
       number: "01",
       title: "Tell Us Your Idea",
-      description: "Share your project requirements, business goals, and target audience with our engineering team."
+      description: "Share your business website requirements, target audience, and goals with our development team."
     },
     {
       number: "02",
       title: "Plan & Estimate",
-      description: "We analyze technical feasibility, scope milestones, and create a transparent fixed-price estimate."
+      description: "We analyze technical feasibility, scope milestones, and create a transparent, affordable estimate."
     },
     {
       number: "03",
       title: "Design & Develop",
-      description: "Our engineers build your solution using modern React architecture and battle-tested backends."
+      description: "Our team builds your responsive website using modern React architecture and fast, clean code."
     },
     {
       number: "04",
       title: "Test & Launch",
-      description: "We perform automated end-to-end testing, security audits, and deploy your product to production."
+      description: "We test cross-device responsiveness, SEO foundations, and deploy your final website to production."
     }
   ];
 
@@ -62,7 +63,7 @@ export default function Home() {
     {
       icon: Code,
       title: "Clean & Production-Ready Code",
-      description: "We write maintainable, modular React and Python code strictly adhering to modern industry standards."
+      description: "We write maintainable, modular React and Python code strictly adhering to modern web standards."
     },
     {
       icon: Clock,
@@ -71,21 +72,28 @@ export default function Home() {
     },
     {
       icon: Users,
-      title: "Direct Technical Communication",
-      description: "No middlemen or non-technical account reps. Speak directly with the engineers building your product."
+      title: "Direct Developer Communication",
+      description: "No middlemen or account reps. Speak directly with the engineers building your website."
     },
     {
       icon: ShieldCheck,
-      title: "Security & IP Protection",
-      description: "Strict non-disclosure agreements (NDAs) and bank-grade data encryption practices protect your business."
+      title: "100% Code Ownership",
+      description: "You receive full source code ownership, clean licensing, and complete administrative control."
     }
   ];
 
   return (
     <div className="min-h-screen bg-white">
       
-      {/* 1. HERO SECTION */}
-      <section className="bg-slate-50/70 border-b border-slate-200 py-16 lg:py-24">
+      {/* 1. SEO Head Metadata */}
+      <SEO
+        title="WTG - We Tech Guys | Website Development Company"
+        description="WTG - We Tech Guys builds modern, responsive, and affordable business websites, e-commerce stores, landing pages, and custom web solutions. We Build. You Grow."
+        canonicalPath="/"
+      />
+
+      {/* 2. HERO SECTION */}
+      <section className="bg-slate-50/70 border-b border-slate-200 py-16 lg:py-24" aria-label="Hero Section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
             
@@ -98,21 +106,28 @@ export default function Home() {
                 </span>
               </div>
 
+              {/* Primary Page H1 */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
-                Have an Idea? <br />
-                <span className="text-amber-500">Let's Build It.</span>
+                Professional Website Development <br />
+                <span className="text-amber-500">for Growing Businesses</span>
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl">
-                We design and develop modern websites, applications, AI solutions, and custom software for real businesses and ambitious startups.
+                We design and develop modern, responsive business websites, e-commerce platforms, landing pages, and custom web solutions. Built for speed, SEO friendliness, and real growth.
               </p>
 
-              <div className="pt-2 flex flex-col sm:flex-row gap-4">
+              {/* Special Launch Offer Alert Box */}
+              <div className="p-3.5 bg-amber-500/10 border border-amber-400 rounded-lg text-xs font-bold text-amber-950 flex items-center">
+                <Sparkles className="w-4 h-4 text-amber-600 mr-2 shrink-0" />
+                <span>Launch Special Offer: ₹2,000 – ₹5,000 for the First 5 Customers!</span>
+              </div>
+
+              <div className="pt-1 flex flex-col sm:flex-row gap-4">
                 <button
                   onClick={() => navigate('/project-request')}
                   className="inline-flex items-center justify-center px-7 py-3.5 text-base font-extrabold text-slate-950 bg-amber-500 rounded-md hover:bg-amber-600 transition-all duration-150 shadow-xs border border-amber-400"
                 >
-                  Start a Project
+                  Start Your Website
                   <ArrowRight className="ml-2 w-5 h-5 text-slate-950" />
                 </button>
                 <button
@@ -124,18 +139,18 @@ export default function Home() {
               </div>
 
               {/* Guarantees */}
-              <div className="pt-6 border-t border-slate-200 flex flex-wrap gap-6 text-xs font-semibold text-slate-700">
+              <div className="pt-5 border-t border-slate-200 flex flex-wrap gap-6 text-xs font-semibold text-slate-700">
                 <span className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-amber-500 mr-1.5" />
-                  Fixed Budget Guarantee
+                  Affordable Fixed Pricing
                 </span>
                 <span className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-amber-500 mr-1.5" />
-                  Full Source Code Ownership
+                  100% Mobile Responsive
                 </span>
                 <span className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-amber-500 mr-1.5" />
-                  Post-Launch Support
+                  SEO-Friendly Structure
                 </span>
               </div>
             </div>
@@ -149,19 +164,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. TRUST SECTION */}
-      <section className="bg-white py-12 border-b border-slate-200">
+      {/* 3. TRUST SECTION */}
+      <section className="bg-white py-12 border-b border-slate-200" aria-label="Business Metrics">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-xs font-bold uppercase tracking-widest text-slate-400">
-              Trusted Development • Built for Real Businesses
+              Trusted Website Development • Built for Real Businesses
             </h2>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="p-6 rounded-lg bg-slate-50 border border-slate-200">
               <div className="text-3xl sm:text-4xl font-extrabold text-slate-900 font-mono">25+</div>
-              <div className="text-sm font-semibold text-slate-600 mt-1">Completed Projects</div>
+              <div className="text-sm font-semibold text-slate-600 mt-1">Completed Websites</div>
             </div>
             <div className="p-6 rounded-lg bg-slate-50 border border-slate-200">
               <div className="text-3xl sm:text-4xl font-extrabold text-slate-900 font-mono">15+</div>
@@ -169,7 +184,7 @@ export default function Home() {
             </div>
             <div className="p-6 rounded-lg bg-slate-50 border border-slate-200">
               <div className="text-3xl sm:text-4xl font-extrabold text-slate-900 font-mono">20+</div>
-              <div className="text-sm font-semibold text-slate-600 mt-1">Happy Global Clients</div>
+              <div className="text-sm font-semibold text-slate-600 mt-1">Satisfied Clients</div>
             </div>
             <div className="p-6 rounded-lg bg-slate-50 border border-slate-200">
               <div className="text-3xl sm:text-4xl font-extrabold text-amber-500 font-mono">98%</div>
@@ -179,14 +194,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. SERVICES SECTION */}
-      <section className="py-20 bg-slate-50/50 border-b border-slate-200">
+      {/* 4. SERVICES SECTION */}
+      <section className="py-20 bg-slate-50/50 border-b border-slate-200" aria-label="Website Development Services">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <SectionTitle
               badge="Our Services"
-              title="Everything You Need to Build Your Product"
-              subtitle="From responsive landing pages to enterprise AI microservices, we engineer robust digital products."
+              title="Comprehensive Website Development Solutions"
+              subtitle="From responsive business landing pages to e-commerce storefronts and custom web apps."
               className="mb-0"
             />
             <Link
@@ -209,13 +224,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. HOW IT WORKS / TIMELINE */}
-      <section className="py-20 bg-white border-b border-slate-200">
+      {/* 5. HOW IT WORKS / TIMELINE */}
+      <section className="py-20 bg-white border-b border-slate-200" aria-label="Development Process">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
-            badge="Process"
+            badge="Our Process"
             title="How We Turn Your Idea into Reality"
-            subtitle="A transparent 4-step development methodology built for quality and speed."
+            subtitle="A transparent 4-step development methodology built for quality, speed, and affordability."
             centered={true}
           />
 
@@ -250,14 +265,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. FEATURED PROJECTS */}
-      <section className="py-20 bg-slate-50/50 border-b border-slate-200">
+      {/* 6. FEATURED PROJECTS */}
+      <section className="py-20 bg-slate-50/50 border-b border-slate-200" aria-label="Websites We Build">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <SectionTitle
-              badge="Portfolio"
+              badge="Websites We Build"
               title="Featured Client Projects"
-              subtitle="Explore recent applications and platforms we have engineered for real businesses."
+              subtitle="Explore recent business websites, portals, and platforms engineered by WTG."
               className="mb-0"
             />
             <Link
@@ -276,13 +291,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. WHY CHOOSE US */}
-      <section className="py-20 bg-white border-b border-slate-200">
+      {/* 7. WHY CHOOSE WTG */}
+      <section className="py-20 bg-white border-b border-slate-200" aria-label="Why Choose WTG">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
-            badge="Why Us"
-            title="Engineered for Reliability & Scale"
-            subtitle="We bridge the gap between expensive software agencies and unreliable freelancers."
+            badge="Why Choose WTG?"
+            title="Engineered for Reliability, Speed & Growth"
+            subtitle="We build high-performance business websites that deliver real business impact."
             centered={true}
           />
 
@@ -310,8 +325,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. TECHNOLOGIES */}
-      <section className="py-20 bg-slate-50/50 border-b border-slate-200">
+      {/* 8. TECHNOLOGIES */}
+      <section className="py-20 bg-slate-50/50 border-b border-slate-200" aria-label="Technologies We Master">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
             badge="Tech Stack"
@@ -342,13 +357,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 8. CLIENT TESTIMONIALS */}
-      <section className="py-20 bg-white border-b border-slate-200">
+      {/* 9. CLIENT TESTIMONIALS */}
+      <section className="py-20 bg-white border-b border-slate-200" aria-label="Client Testimonials">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
             badge="Testimonials"
             title="What Our Clients Say"
-            subtitle="Real feedback from founders and tech leaders who built their platforms with WTG."
+            subtitle="Real feedback from business owners and founders who built their platforms with WTG."
             centered={true}
           />
 
@@ -360,13 +375,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 9. PRICING PACKAGES */}
-      <section className="py-20 bg-slate-50/50 border-b border-slate-200">
+      {/* 10. PRICING PACKAGES */}
+      <section className="py-20 bg-slate-50/50 border-b border-slate-200" aria-label="Affordable Packages">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
-            badge="Investment"
-            title="Transparent Project Packages"
-            subtitle="Clear, predictable pricing tailored to your application's technical scope."
+            badge="Affordable Website Investment"
+            title="Transparent Website Packages"
+            subtitle="Clear, predictable pricing tailored to your business scope. Take advantage of our Launch Offer!"
             centered={true}
           />
 
@@ -382,7 +397,7 @@ export default function Home() {
               >
                 {pkg.popular && (
                   <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3.5 py-1 bg-amber-500 text-slate-950 text-xs font-extrabold rounded-full uppercase tracking-wider shadow-2xs">
-                    Most Popular
+                    Limited Launch Special
                   </span>
                 )}
 
@@ -422,13 +437,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 10. FAQ SECTION */}
-      <section className="py-20 bg-white border-b border-slate-200">
+      {/* 11. FAQ SECTION */}
+      <section className="py-20 bg-white border-b border-slate-200" aria-label="Frequently Asked Questions">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
-            badge="FAQ"
+            badge="Frequently Asked Questions"
             title="Frequently Asked Questions"
-            subtitle="Have questions before starting? Find quick answers regarding process, pricing, and ownership."
+            subtitle="Find quick answers regarding website development costs, timelines, responsiveness, and maintenance."
             centered={true}
           />
 
@@ -440,30 +455,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 11. ELEGANT DARK CALL TO ACTION */}
-      <section className="py-20 bg-slate-900 text-white">
+      {/* 12. ELEGANT DARK CALL TO ACTION */}
+      <section className="py-20 bg-slate-900 text-white" aria-label="Contact WTG">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
           <span className="inline-block px-3.5 py-1 text-xs font-bold tracking-wider text-amber-400 uppercase bg-slate-800 rounded-full border border-amber-400/30">
             Let's Collaborate
           </span>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
-            Have a Project in Mind? <br />
+            Have a Business Project in Mind? <br />
             <span className="text-amber-400">WE BUILD. YOU GROW.</span>
           </h2>
 
           <p className="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Tell us what you're building and we'll help turn your idea into a working, production-grade digital product.
+            Tell us what website you need and we'll help turn your idea into an affordable, high-converting digital presence.
           </p>
 
-          <div className="pt-4">
+          <div className="pt-4 flex flex-col sm:flex-row justify-center gap-4">
             <button
               onClick={() => navigate('/project-request')}
               className="inline-flex items-center justify-center px-8 py-4 text-base font-extrabold text-slate-950 bg-amber-500 rounded-md hover:bg-amber-600 transition-colors shadow-lg border border-amber-400"
             >
-              Start Your Project
+              Build Your Business Website
               <ArrowRight className="ml-2 w-5 h-5 text-slate-950" />
             </button>
+            <a
+              href="https://wa.me/918667587977"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-slate-800 hover:bg-slate-700 rounded-md border border-slate-700 transition-colors"
+            >
+              WhatsApp Us (8667587977)
+            </a>
           </div>
         </div>
       </section>
