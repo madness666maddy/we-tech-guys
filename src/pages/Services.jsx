@@ -52,10 +52,10 @@ export default function Services() {
           <div className="shrink-0">
             <button
               onClick={() => navigate('/project-request')}
-              className="inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors shadow-xs"
+              className="inline-flex items-center justify-center px-6 py-3.5 text-base font-extrabold text-slate-950 bg-amber-500 rounded-md hover:bg-amber-600 transition-colors shadow-xs border border-amber-400"
             >
               Discuss Custom Requirement
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-2 w-5 h-5 text-slate-950" />
             </button>
           </div>
         </div>

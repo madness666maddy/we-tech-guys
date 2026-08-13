@@ -3,12 +3,16 @@
 @layer base {
   :root {
     --color-bg-primary: #ffffff;
-    --color-bg-secondary: #f7f8fa;
-    --color-text-primary: #111827;
-    --color-text-secondary: #6b7280;
-    --color-border: #e5e7eb;
-    --color-accent: #2563eb;
-    --color-accent-hover: #1d4ed8;
+    --color-bg-secondary: #f8fafc;
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #475569;
+    --color-border: #e2e8f0;
+    
+    /* WTG Logo Theme Colors */
+    --color-wtg-navy: #0f172a;
+    --color-wtg-amber: #f59e0b;
+    --color-wtg-amber-hover: #d97706;
+    --color-wtg-amber-light: #fef3c7;
   }
 
   html {
@@ -18,8 +22,25 @@
 
   body {
     background-color: #ffffff;
-    color: #111827;
+    color: #0f172a;
   }
+}
+
+/* WTG Custom Helper Classes */
+.bg-wtg-navy {
+  background-color: #0f172a;
+}
+
+.text-wtg-amber {
+  color: #f59e0b;
+}
+
+.bg-wtg-amber {
+  background-color: #f59e0b;
+}
+
+.border-wtg-amber {
+  border-color: #f59e0b;
 }
 
 /* Custom subtle animations */
@@ -37,7 +58,7 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f7f8fa;
+  background: #f8fafc;
 }
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;

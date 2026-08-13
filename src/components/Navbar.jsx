@@ -39,8 +39,8 @@ export default function Navbar() {
                 to={link.path}
                 className={({ isActive }) =>
                   `text-sm font-semibold transition-colors duration-150 py-1 border-b-2 ${isActive
-                    ? 'text-blue-600 border-blue-600'
-                    : 'text-slate-600 border-transparent hover:text-slate-900 hover:border-slate-300'
+                    ? 'text-slate-900 border-amber-500 font-bold'
+                    : 'text-slate-600 border-transparent hover:text-slate-900 hover:border-amber-300'
                   }`
                 }
               >
@@ -56,10 +56,10 @@ export default function Navbar() {
                 closeMobileMenu();
                 navigate('/project-request');
               }}
-              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-all duration-150 shadow-xs focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-extrabold text-slate-950 bg-amber-500 rounded-md hover:bg-amber-600 transition-all duration-150 shadow-xs border border-amber-400 focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
             >
               Start a Project
-              <ArrowRight className="ml-2 w-4 h-4" />
+              <ArrowRight className="ml-2 w-4 h-4 text-slate-950" />
             </button>
           </div>
 

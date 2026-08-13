@@ -16,7 +16,7 @@ export default function FAQItem({ faq }) {
         </span>
         <ChevronDown
           className={`w-5 h-5 text-slate-500 transition-transform duration-200 shrink-0 ${
-            isOpen ? 'rotate-180 text-blue-600' : ''
+            isOpen ? 'rotate-180 text-amber-600 font-bold' : ''
           }`}
         />
       </button>

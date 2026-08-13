@@ -91,50 +91,50 @@ export default function Home() {
             
             {/* Left Column Content */}
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center space-x-2 px-3 py-1 bg-blue-50 border border-blue-200 rounded-full">
-                <span className="w-2 h-2 rounded-full bg-blue-600"></span>
-                <span className="text-xs font-semibold text-blue-700 tracking-wide">
-                  Freelance Software Development Agency
+              <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-amber-50 border border-amber-300 rounded-full shadow-2xs">
+                <span className="w-2 h-2 rounded-full bg-amber-500"></span>
+                <span className="text-xs font-bold text-amber-900 tracking-wide uppercase">
+                  WE TECH GUYS • WE BUILD. YOU GROW.
                 </span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                 Have an Idea? <br />
-                <span className="text-blue-600">Let's Build It.</span>
+                <span className="text-amber-500">Let's Build It.</span>
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl">
-                We design and develop modern websites, web applications, AI solutions, and custom software tailored for real businesses and ambitious startups.
+                We design and develop modern websites, applications, AI solutions, and custom software for real businesses and ambitious startups.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row gap-4">
                 <button
                   onClick={() => navigate('/project-request')}
-                  className="inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors shadow-xs"
+                  className="inline-flex items-center justify-center px-7 py-3.5 text-base font-extrabold text-slate-950 bg-amber-500 rounded-md hover:bg-amber-600 transition-all duration-150 shadow-xs border border-amber-400"
                 >
                   Start a Project
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                  <ArrowRight className="ml-2 w-5 h-5 text-slate-950" />
                 </button>
                 <button
                   onClick={() => navigate('/projects')}
-                  className="inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold text-slate-700 bg-white border border-slate-300 rounded-md hover:bg-slate-50 transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-3.5 text-base font-bold text-slate-700 bg-white border border-slate-300 rounded-md hover:bg-slate-50 transition-colors"
                 >
                   View Our Work
                 </button>
               </div>
 
               {/* Guarantees */}
-              <div className="pt-6 border-t border-slate-200 flex flex-wrap gap-6 text-xs font-medium text-slate-600">
+              <div className="pt-6 border-t border-slate-200 flex flex-wrap gap-6 text-xs font-semibold text-slate-700">
                 <span className="flex items-center">
-                  <CheckCircle className="w-4 h-4 text-blue-600 mr-1.5" />
+                  <CheckCircle className="w-4 h-4 text-amber-500 mr-1.5" />
                   Fixed Budget Guarantee
                 </span>
                 <span className="flex items-center">
-                  <CheckCircle className="w-4 h-4 text-blue-600 mr-1.5" />
+                  <CheckCircle className="w-4 h-4 text-amber-500 mr-1.5" />
                   Full Source Code Ownership
                 </span>
                 <span className="flex items-center">
-                  <CheckCircle className="w-4 h-4 text-blue-600 mr-1.5" />
+                  <CheckCircle className="w-4 h-4 text-amber-500 mr-1.5" />
                   Post-Launch Support
                 </span>
               </div>
@@ -172,7 +172,7 @@ export default function Home() {
               <div className="text-sm font-semibold text-slate-600 mt-1">Happy Global Clients</div>
             </div>
             <div className="p-6 rounded-lg bg-slate-50 border border-slate-200">
-              <div className="text-3xl sm:text-4xl font-extrabold text-blue-600 font-mono">98%</div>
+              <div className="text-3xl sm:text-4xl font-extrabold text-amber-500 font-mono">98%</div>
               <div className="text-sm font-semibold text-slate-600 mt-1">Client Satisfaction</div>
             </div>
           </div>
@@ -184,14 +184,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <SectionTitle
-              badge="Our Expertise"
+              badge="Our Services"
               title="Everything You Need to Build Your Product"
               subtitle="From responsive landing pages to enterprise AI microservices, we engineer robust digital products."
               className="mb-0"
             />
             <Link
               to="/services"
-              className="mt-4 md:mt-0 inline-flex items-center text-sm font-bold text-blue-600 hover:text-blue-700"
+              className="mt-4 md:mt-0 inline-flex items-center text-sm font-bold text-amber-600 hover:text-amber-700"
             >
               View All 12 Services <ArrowRight className="ml-1 w-4 h-4" />
             </Link>
@@ -227,7 +227,7 @@ export default function Home() {
                 className="relative bg-slate-50 rounded-lg p-6 border border-slate-200 flex flex-col justify-between"
               >
                 <div>
-                  <span className="text-3xl font-black text-blue-600 font-mono block mb-3">
+                  <span className="text-3xl font-black text-amber-500 font-mono block mb-3">
                     {step.number}
                   </span>
                   <h3 className="text-lg font-bold text-slate-900 mb-2">
@@ -262,7 +262,7 @@ export default function Home() {
             />
             <Link
               to="/projects"
-              className="mt-4 md:mt-0 inline-flex items-center text-sm font-bold text-blue-600 hover:text-blue-700"
+              className="mt-4 md:mt-0 inline-flex items-center text-sm font-bold text-amber-600 hover:text-amber-700"
             >
               View Full Portfolio <ArrowRight className="ml-1 w-4 h-4" />
             </Link>
@@ -294,8 +294,8 @@ export default function Home() {
                   key={idx}
                   className="p-6 bg-slate-50 border border-slate-200 rounded-lg space-y-3"
                 >
-                  <div className="w-10 h-10 rounded-md bg-blue-100 text-blue-700 flex items-center justify-center font-bold">
-                    <IconComp className="w-5 h-5" />
+                  <div className="w-10 h-10 rounded-md bg-amber-100/80 text-amber-700 flex items-center justify-center font-bold border border-amber-200">
+                    <IconComp className="w-5 h-5 text-amber-600" />
                   </div>
                   <h3 className="text-base font-bold text-slate-900">
                     {item.title}
@@ -348,7 +348,7 @@ export default function Home() {
           <SectionTitle
             badge="Testimonials"
             title="What Our Clients Say"
-            subtitle="Real feedback from founders and tech leaders who built their platforms with DEVFORGE."
+            subtitle="Real feedback from founders and tech leaders who built their platforms with WTG."
             centered={true}
           />
 
@@ -376,12 +376,12 @@ export default function Home() {
                 key={pkg.id}
                 className={`bg-white rounded-lg border p-8 flex flex-col justify-between relative ${
                   pkg.popular
-                    ? 'border-blue-600 shadow-md ring-1 ring-blue-600'
+                    ? 'border-amber-500 shadow-md ring-1 ring-amber-500'
                     : 'border-slate-200 shadow-2xs'
                 }`}
               >
                 {pkg.popular && (
-                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-1 bg-blue-600 text-white text-xs font-bold rounded-full uppercase tracking-wider shadow-2xs">
+                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3.5 py-1 bg-amber-500 text-slate-950 text-xs font-extrabold rounded-full uppercase tracking-wider shadow-2xs">
                     Most Popular
                   </span>
                 )}
@@ -399,7 +399,7 @@ export default function Home() {
                   <ul className="space-y-3 text-sm text-slate-600 mb-8 border-t border-slate-100 pt-6">
                     {pkg.features.map((feat, fIdx) => (
                       <li key={fIdx} className="flex items-start">
-                        <CheckCircle className="w-4 h-4 text-blue-600 mr-2.5 mt-0.5 shrink-0" />
+                        <CheckCircle className="w-4 h-4 text-amber-500 mr-2.5 mt-0.5 shrink-0" />
                         <span>{feat}</span>
                       </li>
                     ))}
@@ -408,9 +408,9 @@ export default function Home() {
 
                 <button
                   onClick={() => navigate('/project-request')}
-                  className={`w-full py-3 px-4 text-sm font-semibold rounded-md transition-colors ${
+                  className={`w-full py-3 px-4 text-sm font-bold rounded-md transition-colors ${
                     pkg.popular
-                      ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-xs'
+                      ? 'bg-amber-500 text-slate-950 hover:bg-amber-600 shadow-xs'
                       : 'bg-slate-100 text-slate-800 hover:bg-slate-200'
                   }`}
                 >
@@ -443,13 +443,13 @@ export default function Home() {
       {/* 11. ELEGANT DARK CALL TO ACTION */}
       <section className="py-20 bg-slate-900 text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-blue-400 uppercase bg-slate-800 rounded-full border border-slate-700">
+          <span className="inline-block px-3.5 py-1 text-xs font-bold tracking-wider text-amber-400 uppercase bg-slate-800 rounded-full border border-amber-400/30">
             Let's Collaborate
           </span>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
             Have a Project in Mind? <br />
-            <span className="text-blue-400">Let's Build It Together.</span>
+            <span className="text-amber-400">WE BUILD. YOU GROW.</span>
           </h2>
 
           <p className="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
@@ -459,10 +459,10 @@ export default function Home() {
           <div className="pt-4">
             <button
               onClick={() => navigate('/project-request')}
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-slate-900 bg-white rounded-md hover:bg-slate-100 transition-colors shadow-lg"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-extrabold text-slate-950 bg-amber-500 rounded-md hover:bg-amber-600 transition-colors shadow-lg border border-amber-400"
             >
               Start Your Project
-              <ArrowRight className="ml-2 w-5 h-5 text-blue-600" />
+              <ArrowRight className="ml-2 w-5 h-5 text-slate-950" />
             </button>
           </div>
         </div>

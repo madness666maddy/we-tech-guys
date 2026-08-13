@@ -34,9 +34,9 @@ export default function Projects() {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 text-sm font-semibold rounded-md transition-all duration-150 ${
+                className={`px-4 py-2 text-sm font-bold rounded-md transition-all duration-150 ${
                   isActive
-                    ? 'bg-blue-600 text-white shadow-2xs'
+                    ? 'bg-amber-500 text-slate-950 shadow-xs border border-amber-400 font-extrabold'
                     : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
                 }`}
               >
