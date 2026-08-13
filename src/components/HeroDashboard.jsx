@@ -23,7 +23,7 @@ export default function HeroDashboard() {
           <span className="ml-2 text-xs font-mono text-slate-400 font-medium">wtg-console v2.4</span>
         </div>
         <div className="flex items-center space-x-2 text-xs font-semibold text-slate-800 bg-amber-50 px-2.5 py-1 rounded border border-amber-200">
-          <span className="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+          <span className="w-2 h-2 rounded-full bg-amber-500"></span>
           <span>Sprint #4 Active</span>
         </div>
       </div>
@@ -53,7 +53,7 @@ export default function HeroDashboard() {
           <span className="text-amber-600 font-mono font-bold">67%</span>
         </div>
         <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
-          <div className="h-full bg-amber-500 rounded-full w-2/3 transition-all duration-500"></div>
+          <div className="h-full bg-amber-500 rounded-full w-2/3 transition-all duration-300"></div>
         </div>
       </div>
 
@@ -74,7 +74,7 @@ export default function HeroDashboard() {
               {task.status === 'completed' ? (
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
               ) : task.status === 'in_progress' ? (
-                <div className="w-4 h-4 rounded-full border-2 border-amber-500 border-t-transparent animate-spin shrink-0"></div>
+                <Clock className="w-4 h-4 text-amber-600 shrink-0" />
               ) : (
                 <Circle className="w-4 h-4 text-slate-300 shrink-0" />
               )}
